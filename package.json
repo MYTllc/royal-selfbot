@@ -16,7 +16,7 @@
         "discord.js",
         "voice"
     ],
-    "author": "Your Name",
+    "author": "MYTllc",
     "license": "MIT",
     "engines": {
         "node": ">=16.9.0"
@@ -34,10 +34,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/yourusername/royal-selfbot.git"
+        "url": "git+https://github.com/MYTllc/royal-selfbot.git"
     },
     "bugs": {
-        "url": "https://github.com/yourusername/royal-selfbot/issues"
+        "url": "https://github.com/MYTllc/royal-selfbot/issues"
     },
-    "homepage": "https://github.com/yourusername/royal-selfbot#readme"
+    "homepage": "https://github.com/MYTllc/royal-selfbot#readme"
 }
