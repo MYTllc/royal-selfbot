@@ -2,8 +2,8 @@
 
 <div align="center">
 
-<!-- Custom Banner (SVG) -->
-<img src="https://svgshare.com/i/14kA.svg" alt="Royal Code SelfBot Banner" width="80%" />
+<!-- Custom Banner (PNG) -->
+<img src="https://cdn.discordapp.com/attachments/1321547719331811459/1361734568087912538/image.png?ex=67ffd5a4&is=67fe8424&hm=eb3d85f87def469d1dd32102a6f313b4f020d82b854c29b7d10e3b0a82b56ff2&" alt="Royal Code SelfBot Banner" width="80%" />
 
 <br /><br />
 
