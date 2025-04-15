@@ -1,8 +1,9 @@
-# Royal Selfbot
+# Royal Code SelfBot
 
 <div align="center">
 
-<img src="https://user-images.githubusercontent.com/royal-selfbot/banner.png" alt="Royal Selfbot Banner" width="80%" />
+<!-- Custom Banner (SVG) -->
+<img src="https://svgshare.com/i/14kA.svg" alt="Royal Code SelfBot Banner" width="80%" />
 
 <br /><br />
 
@@ -32,7 +33,7 @@
 
 ---
 
-Royal Selfbot is an experimental Node.js library for interacting with the Discord API using a user account (self-bot).  
+Royal Code SelfBot is an experimental Node.js library for interacting with the Discord API using a user account (self-bot).  
 It provides a familiar structure to libraries like discord.js, but adapted for user tokens.  
 Includes support for `@discordjs/voice` (with limitations).
 
@@ -119,11 +120,78 @@ The library includes a `voiceAdapterCreator` for `@discordjs/voice` integration,
 
 ---
 
-## 📚 Documentation
+## 📖 API Reference
 
-- [API Reference](https://github.com/MYTllc/royal-selfbot/wiki)
-- [Examples](https://github.com/MYTllc/royal-selfbot/tree/main/examples)
-- [FAQ](https://github.com/MYTllc/royal-selfbot/wiki/FAQ)
+### Client
+
+- **constructor(options?)**  
+  Create a new selfbot client.
+
+- **.login(token: string): Promise<void>**  
+  Log in with your Discord user token.
+
+- **Events:**  
+  - `ready`: Emitted when logged in and ready.
+  - `messageCreate`: Emitted on every message received.
+  - `error`: Emitted on error.
+
+### Message
+
+- **.reply(content: string): Promise<Message>**  
+  Reply to a message.
+
+- **.edit(content: string): Promise<Message>**  
+  Edit a message.
+
+### Guild
+
+- **.fetch(): Promise<Guild>**  
+  Fetch guild info.
+
+### Channel
+
+- **.send(content: string): Promise<Message>**  
+  Send a message to a channel.
+
+---
+
+## 💡 Examples
+
+### Ping Command
+
+```js
+client.on('messageCreate', async (message) => {
+    if (message.content === '!ping') {
+        await message.reply('Pong!');
+    }
+});
+```
+
+### User Info Command
+
+```js
+client.on('messageCreate', async (message) => {
+    if (message.content === '!myinfo') {
+        await message.channel.send(`Your Tag: ${message.author.tag}\nYour ID: ${message.author.id}`);
+    }
+});
+```
+
+---
+
+## ❓ FAQ
+
+**Q: Is this safe to use?**  
+A: No. Self-bots are against Discord's ToS and can get your account banned.
+
+**Q: Can I use this for moderation or automation?**  
+A: No. Use a bot account for legitimate automation.
+
+**Q: Will voice features work?**  
+A: Voice is experimental and likely blocked for user tokens.
+
+**Q: Where can I get help?**  
+A: Join the [Royal Discord](https://discord.gg/royal0) for discussion and limited support.
 
 ---
 
@@ -153,5 +221,6 @@ The developers are not responsible for any consequences resulting from its use, 
 <a href="https://github.com/MYTllc/royal-selfbot/issues">
     <img src="https://img.shields.io/github/issues/MYTllc/royal-selfbot?style=flat-square" alt="GitHub issues" />
 </a>
-
+<br /><br />
+<sub>Banner designed with SVG. Made by <b>code</b>.</sub>
 </div>
