@@ -1,0 +1,43 @@
+{
+    "name": "royal-selfbot",
+    "version": "1.0.0",
+    "description": "A Discord self-bot library. USE WITH EXTREME CAUTION - AGAINST DISCORD TOS.",
+    "main": "src/index.js",
+    "scripts": {
+        "start:basic": "node examples/basic.js",
+        "start:voice": "node examples/voice.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "discord",
+        "selfbot",
+        "api",
+        "royal",
+        "discord.js",
+        "voice"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "engines": {
+        "node": ">=16.9.0"
+    },
+    "dependencies": {
+        "@discordjs/voice": "^0.16.1",
+        "axios": "^1.8.4",
+        "dotenv": "^16.5.0",
+        "libsodium-wrappers": "^0.7.15",
+        "ws": "^8.18.1",
+        "zlib-sync": "^0.1.9"
+    },
+    "devDependencies": {
+        "eslint": "^8.45.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yourusername/royal-selfbot.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yourusername/royal-selfbot/issues"
+    },
+    "homepage": "https://github.com/yourusername/royal-selfbot#readme"
+}
